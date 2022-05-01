@@ -17,3 +17,21 @@ header a {
   text-decoration: none;
   color: antiquewhite;
 }
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product {
+  border: 1px black solid;
+  margin: 1rem;
+}
+.product img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.productInfo {
+  padding: 1rem;
+}
