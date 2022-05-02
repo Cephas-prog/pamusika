@@ -5,11 +5,12 @@ import data from './data.js';
 
 const app = express();
 
-app.get('/api/products', (res, req) => {
+app.get('/api/products', (req, res) => {
 	res.send(data.products);
+
 });
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
-    console.log(`server running at http://localhost:${port}`);
-})
+	console.log(`server running at http://localhost:${port}`);
+});
